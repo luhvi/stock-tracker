@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":["file:///C:/cursor/training-app/app/page.tsx"],"sourcesContent":["import TextType from \"@/components/ui/TextType\";\n\nexport default function Home() {\n  return (\n    <main className=\"absolute top-90 flex flex-col items-start justify-center pl-18\">\n      <h1 className=\"mb-4 text-4xl font-semibold text-[oklch(0.95_0_0)] sm:text-5xl md:text-6xl\">\n        The AI Training App\n      </h1>\n      <TextType\n        text={[\n          \"The smartest training app ever built\",\n          \"Designed to take your training to the next level\",\n        ]}\n        className=\"mb-8 text-lg\"\n        typingSpeed={75}\n        pauseDuration={1500}\n        showCursor={true}\n        cursorCharacter=\"_\"\n      />\n      <button className=\"cursor-pointer rounded-full px-8 py-4 text-lg font-medium text-[oklch(0.95_0_0)] ring-1 ring-white/60 transition-all duration-300 ease-in-out hover:bg-indigo-700/40 hover:ring-indigo-500\">\n        Try For Free\n      </button>\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAK,WAAU;;0BACd,8OAAC;gBAAG,WAAU;0BAA6E;;;;;;0BAG3F,8OAAC,6HAAA,CAAA,UAAQ;gBACP,MAAM;oBACJ;oBACA;iBACD;gBACD,WAAU;gBACV,aAAa;gBACb,eAAe;gBACf,YAAY;gBACZ,iBAAgB;;;;;;0BAElB,8OAAC;gBAAO,WAAU;0BAA6L;;;;;;;;;;;;AAKrN","debugId":null}}]
+}
