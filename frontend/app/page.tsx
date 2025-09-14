@@ -1,9 +1,5 @@
-import { Graph } from "@/components/ui/graph";
+import { tickers } from "@/ticker-data";
 
 export default function Page() {
-  return (
-    <main className="flex items-center justify-center">
-      <Graph />
-    </main>
-  );
+  return <div></div>;
 }
