@@ -51,10 +51,23 @@ for ticker in tickers:
 
 def get_price(ticker: str):
     try:
-        price = yf.Ticker(ticker).fast_info.last_price
+        stock = yf.Ticker(ticker)
+        price = stock.fast_info.last_price
         return f"{price:.3f}"
     except Exception:
         return "N/A"
+
+def get_prev_close(ticker: str):
+    try:
+        stock = yf.Ticker(ticker)
+        hist = stock.history(period="5d")
+        if len(hist) >= 2:
+            prev_close = float(hist["Close"].iloc[-2])
+            return f"{prev_close:.3f}"
+        return None
+    except Exception as e:
+        print(f"Error getting previous close for {ticker}: {e}")
+        return None
 
 app = FastAPI()
 
@@ -84,6 +97,11 @@ async def get_ticker_hist(ticker: str):
 async def get_ticker_price(ticker: str):
     price = get_price(ticker.upper())
     return {"ticker": ticker.upper(), "price": price}
+
+@app.get("/prev-close/{ticker}")
+async def get_ticker_prev_close(ticker: str):
+    prev_close = get_prev_close(ticker.upper())
+    return {"ticker": ticker.upper(), "prev_close": prev_close}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
