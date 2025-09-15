@@ -2,9 +2,16 @@
   "pages": {
     "/page": [
       "static/chunks/[root-of-the-server]__9d126714._.css",
-      "static/chunks/node_modules_next_dist_01fcdebf._.js",
+      "static/chunks/node_modules_next_3a964fe3._.js",
+      "static/chunks/node_modules_react-icons_io5_index_mjs_39106f7b._.js",
+      "static/chunks/node_modules_react-icons_fa6_index_mjs_00e856c4._.js",
+      "static/chunks/node_modules_react-icons_io_index_mjs_d35cf443._.js",
+      "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
+      "static/chunks/node_modules_axios_lib_99999129._.js",
+      "static/chunks/node_modules_zustand_esm_87b9476f._.js",
+      "static/chunks/_3d0a0c43._.js",
       "static/chunks/app_layout_tsx_68b267f5._.js",
-      "static/chunks/node_modules_next_dist_client_components_builtin_global-error_2a6dfdfb.js",
+      "static/chunks/node_modules_next_dist_client_components_builtin_global-error_1d98ad29.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_6aaa83c7._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc06._.js",
       "static/chunks/node_modules_next_dist_compiled_next-devtools_index_d575f738.js",

@@ -70,7 +70,7 @@ export default function Page({ params }: PageProps) {
       const differencePercentage = (priceDifference / prevClosePrice) * 100;
       const priceDifferenceObj = {
         number: `${priceDifference.toFixed(2)}`,
-        percentage: `(-${differencePercentage.toFixed(2)}%)`,
+        percentage: `(${differencePercentage.toFixed(2)}%)`,
       };
       return priceDifferenceObj;
     } else {
@@ -87,15 +87,17 @@ export default function Page({ params }: PageProps) {
   const priceDifferencePercentage = getPriceDifference()?.percentage;
 
   return (
-    <div>
+    <div className="mx-auto mt-16 max-w-250 cursor-default px-4">
       <div className="flex items-center gap-2">
-        <span className="text-2xl font-semibold text-white">
+        <span className="text-2xl font-semibold text-[hsl(0_0_95)]">
           {corporationName}
         </span>
-        <span className="text-2xl font-semibold text-white">({symbol})</span>
+        <span className="text-2xl font-semibold text-[hsl(0_0_95)]">
+          ({symbol})
+        </span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="text-4xl font-bold text-white">{price}</span>
+        <span className="text-4xl font-bold text-[hsl(0_0_95)]">{price}</span>
         <span
           className={`text-xl font-bold ${priceDifferenceNumber?.[0] === "+" ? "text-green-500" : "text-red-600"} `}
         >
