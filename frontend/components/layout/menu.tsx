@@ -24,10 +24,12 @@ export const Menu = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="fixed top-0 right-0 bottom-0 left-0 flex flex-col px-4 py-16 backdrop-blur-lg">
-      {MenuBtns.map((menuBtn, index) => (
-        <MenuBtn key={index} title={menuBtn.title} href={menuBtn.href} />
-      ))}
+    <div className="fixed top-0 right-0 bottom-0 left-0 backdrop-blur-md">
+      <div className="mx-auto flex max-w-250 flex-col px-4 py-16">
+        {MenuBtns.map((menuBtn, index) => (
+          <MenuBtn key={index} title={menuBtn.title} href={menuBtn.href} />
+        ))}
+      </div>
     </div>
   );
 };
