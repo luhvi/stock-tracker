@@ -73,7 +73,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "https://stock-tracker-one-pi.vercel.app/"
+    "https://stock-tracker-one-pi.vercel.app"
 ]
 
 app.add_middleware(
